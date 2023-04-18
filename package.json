@@ -1,0 +1,24 @@
+{
+  "name": "copilot-labs",
+  "private": true,
+  "scripts": {
+    "build": "slidev build",
+    "dev": "slidev --open",
+    "export": "slidev export",
+    "test": "vitest",
+    "png": "slidev export --format png",
+    "pdf": "slidev export"
+  },
+  "dependencies": {
+    "@slidev/cli": "^0.40.5",
+    "@slidev/theme-default": "*",
+    "@slidev/theme-seriph": "*",
+    "chai": "^4.3.7",
+    "mocha": "^10.2.0"
+  },
+  "devDependencies": {
+    "playwright-chromium": "^1.32.1",
+    "vitest": "^0.29.8"
+  }
+}
+
