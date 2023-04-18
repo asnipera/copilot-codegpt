@@ -164,7 +164,7 @@ h1 {
   -webkit-text-fill-color: transparent;
   -moz-text-fill-color: transparent;
 }
-  .slidev-page-6{
+  .slidev-page-4{
     background-image: url(/neotrident.jpg) !important;
     background-size: cover;
   }
@@ -199,7 +199,7 @@ h1 {
   -webkit-text-fill-color: transparent;
   -moz-text-fill-color: transparent;
 }
-  .slidev-page-4{
+  .slidev-page-5{
     background-image: url(/neotrident.jpg) !important;
     background-size: cover;
   }
@@ -239,7 +239,7 @@ h1 {
   -webkit-text-fill-color: transparent;
   -moz-text-fill-color: transparent;
 }
-  .slidev-page-5{
+  .slidev-page-6{
     background-image: url(/neotrident.jpg) !important;
     background-size: cover;
   }
@@ -251,12 +251,7 @@ h1 {
 
 ```ts
 function ascending(a, b) {
-  return a == null || b == null
-    ? NaN
-    : a < b
-    ? -1
-    : a > b
-    : NaN;
+  return a == null || b == null? NaN: a < b? -1: a > b : NaN;
 }
 ```
 
@@ -286,7 +281,7 @@ function ascending(a, b) {
     -webkit-text-fill-color: transparent;
     -moz-text-fill-color: transparent;
   }
-    .slidev-page-2{
+    .slidev-page-7{
       background-image: url(/neotrident.jpg) !important;
       background-size: cover;
     }
@@ -323,7 +318,7 @@ function add(x, y) {
     -webkit-text-fill-color: transparent;
     -moz-text-fill-color: transparent;
   }
-    .slidev-page-2{
+    .slidev-page-8{
       background-image: url(/neotrident.jpg) !important;
       background-size: cover;
     }
@@ -366,7 +361,7 @@ function getUser(usersList: User[][], id: string) {
     -webkit-text-fill-color: transparent;
     -moz-text-fill-color: transparent;
   }
-    .slidev-page-2{
+    .slidev-page-9{
       background-image: url(/neotrident.jpg) !important;
       background-size: cover;
     }
@@ -401,7 +396,7 @@ h1 {
   -webkit-text-fill-color: transparent;
   -moz-text-fill-color: transparent;
 }
-  .slidev-page-2{
+  .slidev-page-10{
     background-image: url(/neotrident.jpg) !important;
     background-size: cover;
   }
@@ -428,7 +423,7 @@ h1 {
     -webkit-text-fill-color: transparent;
     -moz-text-fill-color: transparent;
   }
-    .slidev-page-2{
+    .slidev-page-11{
       background-image: url(/neotrident.jpg) !important;
       background-size: cover;
     }
@@ -465,10 +460,8 @@ h1 {
       -webkit-text-fill-color: transparent;
       -moz-text-fill-color: transparent;
     }
-      .slidev-page-2{
+      .slidev-page-12{
         background-image: url(/neotrident.jpg) !important;
         background-size: cover;
       }
     </style>
-
----
