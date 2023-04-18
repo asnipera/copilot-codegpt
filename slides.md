@@ -34,7 +34,7 @@ css: unocss
   <span @click="$slidev.nav.next" class="px-2 py-1 rounded cursor-pointer" hover="bg-white bg-opacity-10">
   </span>
   <div class="abs-br flex gap-2" left="49%" bottom="70px">
-  <a href="https://github.com/asnipera/copilot-sliderv" target="_blank" alt="GitHub"
+  <a href="https://github.com/asnipera/copilot-labs" target="_blank" alt="GitHub"
     class="text-xl icon-btn  opacity-50">
     <carbon-logo-github color-black/>
   </a>
