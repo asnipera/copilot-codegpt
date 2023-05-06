@@ -1,3 +1,11 @@
 export function ascending(a: number, b: number) {
-  return a == null || b == null ? NaN : a < b ? -1 : a > b ? 1 : NaN;
+  if (a == null || b == null) {
+    return NaN;
+  } else if (a < b) {
+    return -1;
+  } else if (a > b) {
+    return 1;
+  } else {
+    return NaN;
+  }
 }

@@ -12,29 +12,33 @@ export function add(user: User) {
   }
 }
 
-export function remove(id: string) {
+export function remove(user: User) {
   // 如果用户存在，则删除用户
-  const index = users.findIndex((u) => u.ID === id);
-  if (index !== -1) {
+  const index = users.findIndex((u) => u.ID === user.ID);
+  if (index > -1) {
     users.splice(index, 1);
   }
 }
 
-// update
 export function update(user: User) {
   // 如果用户存在，则更新用户
   const index = users.findIndex((u) => u.ID === user.ID);
-  if (index !== -1) {
+  if (index > -1) {
     users[index] = user;
   }
 }
 
-export function getUser(id: string) {
+export function get(id: string) {
   // 如果用户存在，则返回用户
   return users.find((u) => u.ID === id);
 }
 
-export function getUsers() {
+export function getAll() {
   // 返回所有用户
   return users;
+}
+
+export function clear() {
+  // 清空所有用户
+  users.splice(0, users.length);
 }

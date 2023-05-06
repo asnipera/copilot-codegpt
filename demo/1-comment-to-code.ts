@@ -1,12 +1,16 @@
 //写一个函数，获取数组中的最小的两个值
-export function getMinTwo(arr: number[]) {
-  //获取最小值
-  const min = Math.min(...arr);
-  //获取最小值的索引
-  const minIndex = arr.indexOf(min);
-  //删除最小值
-  arr.splice(minIndex, 1);
-  //获取第二小的值
-  const minTwo = Math.min(...arr);
-  return [min, minTwo];
+export function getMin(arr: number[]): number[] {
+  let min1 = arr[0];
+  let min2 = arr[1];
+  if (min1 > min2) {
+    [min1, min2] = [min2, min1];
+  }
+  for (let i = 2; i < arr.length; i++) {
+    if (arr[i] < min1) {
+      [min1, min2] = [arr[i], min1];
+    } else if (arr[i] < min2) {
+      min2 = arr[i];
+    }
+  }
+  return [min1, min2];
 }
